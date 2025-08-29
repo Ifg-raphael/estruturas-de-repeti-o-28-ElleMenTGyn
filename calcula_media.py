@@ -1,8 +1,8 @@
-soma = 0.0                 # variavel para acumular a soma dos números
+# Lê 5 números que chegam na MESMA linha.
+a, b, c, d, e = map(float, input().split())
 
-for _ in range(5):         # leitura de 5 valores
-    numero = float(input())  # lê um numero
-    soma += numero           # adiciona à soma
+# Soma os 5 valores e divide por 5 para obter a média
+media = (a + b + c + d + e) / 5
 
-media = soma / 5            # calcula a média(5)
-print(f"{media:.2f}")       # imprime a média com 2 casas decimais
+# Mostra a média com 2 casas decimais (ajuste se quiser outro formato)
+print(f"{media:.2f}")
